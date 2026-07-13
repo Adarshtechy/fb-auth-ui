@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/y1/r/ay1hV6OlegS.ico" />
+  <link rel="stylesheet" href="./create-account.css" />
+  <title>Facebook</title>
+</head>
+
+<body>
+  <section class="form-container">
+    <div class="sub-container">
+      <div class="top-bar">
+        <a href="../signin/login.html" aria-label="login-link"><i class="fa-solid fa-angle-left"></i></a>
+      </div>
+
+      <p class="meta"><img src="../assets/meta.png" alt="" class="meta-img" />Meta</p>
+
+      <p class="title">Get started on Facebook</p>
+
+      <p class="desc">
+        Create an account to connect with friends, family and communities of
+        people who share your interests.
+      </p>
+      <p class="user">Name</p>
+
+      <div class="user-name">
+        <div class="user-input">
+          <input type="text" aria-label="first-name" placeholder=" " required />
+          <label>First name</label>
+        </div>
+
+        <div class="user-input">
+          <input type="text" aria-label="last-name" placeholder=" " required />
+          <label>Surname</label>
+        </div>
+      </div>
+
+      <p class="dob">
+        Date of birth
+        <i class="fa-regular fa-circle-question"></i>
+
+        <span class="dob-tooltip">
+          Providing your date of birth helps make sure that you get the right
+          Facebook experience for your age. If you want to change who sees
+          this, go to the About section of your profile. For more details,
+          please visit our <a href="#" aria-label="privacy">Privacy Policy</a>
+        </span>
+      </p>
+
+      <div class="form-section">
+        <div class="dob-row">
+          <select aria-label="day">
+            <option>Day</option>
+            <option>1</option>
+            <option>2</option>
+          </select>
+
+          <select aria-label="month">
+            <option>Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+          </select>
+
+          <select aria-label="year">
+            <option>Year</option>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+          </select>
+        </div>
+
+        <!-- Gender -->
+        <label class="section-label">
+          Gender <i class="fa-regular fa-circle-question"></i>
+          <span class="section-label-tooltip">
+            You can change who sees your gender on your profile later. Select
+            Custom to choose another gender or if you'd rather not say.
+          </span>
+        </label>
+
+        <div class="gender-box">
+          <select aria-label="gender" class="gender">
+            <option>Select your gender</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Custom</option>
+          </select>
+        </div>
+
+        <p class="mb-num">Mobile number or email address</p>
+        <div class="input-group">
+          <input type="text" aria-label="email" id="email" required />
+          <label>Mobile number or email address</label>
+        </div>
+
+        <p class="description">
+          You may receive notifications from us.
+          <a href="https://www.facebook.com/help/297947214257999/?helpref=uf_share">Learn why we ask for you contact
+            information</a>
+        </p>
+
+        <p class="password">Password</p>
+        <div class="input-group">
+          <input type="password" aria-label="password" id="password" required />
+          <label>Password</label>
+        </div>
+
+        <p class="description-two">
+          People who use our service may have uploaded your contact
+          information to Facebook.
+          <a href="https://www.facebook.com/help/637205020878504">Learn more.</a>
+        </p>
+
+        <p class="description-three">
+          By tapping Submit, you agree to create an account and to Facebook's
+          <a href="https://www.facebook.com/terms.php">Term's</a>, <br /><a
+            href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Privacy Policy</a>
+          and
+          <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">Cookies
+            Policy</a>
+        </p>
+
+        <p class="description">
+          The
+          <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Privacy Policy</a>
+          describes the ways we can use the information we collect when you
+          create an account. For example, we use this information to provide,
+          personalise and improve our products, including ads.
+        </p>
+        <button class="submit-btn" type="submit">Submit</button>
+        <button type="submit" aria-label="button" class="already"
+          onclick="window.location.href = '../signin/login.html'">
+          I already have an account
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fb-footer">
+    <div class="footer-links">
+      <div class="languages">
+        <a href="#">English (UK)</a>
+        <a href="#">हिन्दी</a>
+        <a href="#">اردو</a>
+        <a href="#">தமிழ்</a>
+        <a href="#">বাংলা</a>
+        <a href="#">मराठी</a>
+        <a href="#">తెలుగు</a>
+        <a href="#">More languages...</a>
+      </div>
+      <div class="links">
+        <a href="#">Sign up</a>
+        <a href="#">Log in</a>
+        <a href="#">Messenger</a>
+        <a href="#">Facebook Lite</a>
+        <a href="#">Video</a>
+        <a href="#">Meta Pay</a>
+        <a href="#">Meta Store</a>
+        <a href="#">Meta Quest</a>
+        <a href="#">Ray-Ban Meta</a>
+        <a href="#">Meta AI</a>
+        <a href="#">Instagram</a>
+        <a href="#">Threads</a>
+        <a href="#">Privacy Policy</a><br />
+        <a href="#">Privacy Centre</a>
+        <a href="#">About</a>
+        <a href="#">Create ad</a>
+        <a href="#">Create Page</a>
+        <a href="#">Developers</a>
+        <a href="#">Careers</a>
+        <a href="#">Cookies</a>
+        <a href="#">AdChoices</a>
+        <a href="#">Terms</a>
+        <a href="#">Help</a>
+        <a href="#">Contact uploading and non-users</a>
+      </div>
+      <p class="copyright">Meta © 2026</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Optimistic,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  background: white;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid lightgray;
+  display: flex;
+}
+
+.left-side-content {
+  width: 53%;
+  height: 100%;
+  border-right: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 60px;
+  padding-left: 30px;
+}
+
+.left-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding-right: 190px;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 68px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding-left: 30px;
+  width: 320px;
+}
+
+span {
+  font-size: 65px;
+  font-weight: bold;
+  color: rgb(24, 119, 242);
+}
+
+.right-side-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #ddd;
+}
+
+.login-container {
+  width: 645px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 20px 14px 8px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  outline: none;
+  height: 70px;
+  transition: border 0.2s ease;
+}
+
+.input-group label {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+  transition: 0.2s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: 5px;
+  font-size: 15px;
+  color: gray;
+  font-weight: 600;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+  border-color: black;
+}
+
+.login-btn {
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: #1877f2;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #166fe5;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 999px;
+  height: 50px;
+  font-weight: 500;
+}
+
+.forgot:hover {
+  background: #f0f2f5;
+}
+
+.create-btn {
+  padding: 14px;
+  border: 1px solid #1877f2;
+  border-radius: 999px;
+  background: white;
+  color: #006bf7;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5%;
+  font-size: 18px;
+}
+
+.create-btn:hover {
+  background-color: rgb(213, 211, 211);
+}
+
+.meta-img {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 12px;
+}
+
+.meta {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.fb-footer {
+  background: white;
+  padding: 20px;
+  color: #737373;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 1300px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-bottom: 10px;
+}
+
+.languages a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 19px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #737373;
+  font-size: 19px;
+  cursor: pointer;
+  padding-right: 4px;
+}
+
+.copyright {
+  margin-top: 15px;
+  font-size: 19px;
+}
+
+/*----------- Laptop - 1024px -------------*/
+@media screen and (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-side-content {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid lightgray;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left-container {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  span {
+    font-size: 40px;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .login-container {
+    width: 70%;
+    padding: 60px;
+  }
+
+  .fb-footer {
+    background: white;
+    padding: 40px;
+    color: #737373;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    height: 215px;
+  }
+
+  .links a,
+  .languages a,
+  .copyright {
+    font-size: 15px;
+  }
+}
+
+/*------------------ Tablet - 768px --------------*/
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .image {
+    width: 90%;
+  }
+
+  .login-container {
+    width: 80%;
+  }
+
+  .input-group input {
+    height: 55px;
+    padding: 16px 12px 6px 12px;
+  }
+
+  .fb-footer {
+    background: white;
+    padding: 30px;
+    color: #737373;
+    display: flex;
+    justify-content: center;
+    line-height: 15px;
+    height: 150px;
+  }
+
+  .links a,
+  .languages a,
+  .copyright {
+    font-size: 10px;
+  }
+}
+
+/*----------------- Mobile Large - 425px ------------*/
+@media screen and (max-width: 425px) {
+  .left-side-content {
+    height: 80px;
+    padding: 0;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .image,
+  h1 {
+    display: none;
+  }
+
+  .right-side-content {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .login-container {
+    width: 80%;
+    max-width: 320px;
+    margin: auto;
+    padding: 20px 0;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  form {
+    gap: 14px;
+  }
+
+  .input-group input {
+    height: 44px;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+    top: 14px;
+  }
+  .login-btn {
+    height: 44px;
+    border-radius: 22px;
+    font-size: 15px;
+  }
+
+  .forgot {
+    font-size: 13px;
+    color: #1877f2;
+    height: auto;
+    padding: 6px;
+  }
+
+  .create-btn {
+    height: 44px;
+    border-radius: 22px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .copyright {
+    font-size: 11px;
+    margin-top: 10px;
+  }
+
+  .fb-footer {
+    padding: 20px;
+    font-size: 11px;
+  }
+
+  .languages {
+    display: block;
+  }
+  .languages a {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
+
+/*-------------- Mobile Medium - 375px --------------*/
+@media screen and (max-width: 375px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .input-group input {
+    height: 55px;
+    font-size: 14px;
+  }
+}
+
+/*----------------- Mobile Small - 320px ----------------*/
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .input-group input {
+    height: 50px;
+    font-size: 13px;
+  }
+
+  .login-btn,
+  .create-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot {
+    font-size: 12px;
+  }
+}
