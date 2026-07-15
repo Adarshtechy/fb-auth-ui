@@ -10,6 +10,8 @@ A modern and responsive Facebook-inspired Authentication UI built using **HTML5*
 <h2>Forgot Password Page</h2>
 <img width="1920" height="917" alt="image" src="https://github.com/user-attachments/assets/a2e2d4c4-a07a-4ddb-bc06-49021b7916e4" />
 
+<h2>Create Account Page</h2>
+<img width="1920" height="1699" alt="image" src="https://github.com/user-attachments/assets/84a8bf8e-0f89-4b2a-85fa-e02b0b303f7b" />
 
 ## ✨ Features
 
